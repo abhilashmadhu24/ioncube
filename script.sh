@@ -39,9 +39,7 @@ else
 fi
 
 function ioncube ()
-
 {
-
         cd
         wget https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz
         tar xzf ioncube_loaders_lin_x86-64.tar.gz
@@ -54,18 +52,13 @@ function ioncube ()
 
         echo "Done!!!!"
 }
-
-
 function remioncube ()
-
 {
         rm /etc/$PHPVRS/conf.d/ioncube.ini
         rm /CloudStick/Packages/$PHPVRS/lib/php/extensions/$FOLDER/$FILE
         systemctl restart $PHPVRS-fpm.service
         echo "Done!!!"
 }
-
-
 function main()
 {
         if [ $# -lt 1 ];
