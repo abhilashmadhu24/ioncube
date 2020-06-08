@@ -1,7 +1,10 @@
 # ioncube
 Bash script for installing and removing Ioncube for cloudstick
 
-Usage: ./script.sh --install php<version> # installing
+Usage: 
+
+
+       ./script.sh --install php<version> # installing
        eg: ./script.sh --install php70
        
        
